@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Proyecto Final" company="" webLink="http://" view-date="2022-03-30" view-index="0" gantt-divider-location="370" resource-divider-location="300" version="3.2.3240" locale="es_ES">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="202" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="76" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="76" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#99ff99 #ff6666 #ff0000 #ff0033 #000000 #ff6633]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Ninguna">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2022" month="4" date="16" type="HOLIDAY" color="#99ff99">
+            <![CDATA[Ida Enzo]]>
+        </date>
+        <date year="2022" month="4" date="25" type="HOLIDAY" color="#99ff99">
+            <![CDATA[Vuelta Enzo]]>
+        </date>
+        <date year="2022" month="5" date="19" type="HOLIDAY" color="#ff6666">
+            <![CDATA[Turno Electrónica Aplicada III]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Proyecto" color="#000000" meeting="false" start="2022-04-01" duration="56" complete="0" thirdDate="2022-04-01" thirdDate-constraint="1" expand="true">
+            <task id="1" name="Etapa I" color="#000000" meeting="false" start="2022-04-01" duration="21" complete="0" thirdDate="2022-04-01" thirdDate-constraint="0" expand="true">
+                <depend id="13" type="2" difference="-1" hardness="Strong"/>
+                <task id="2" name="Sensores" color="#000000" meeting="false" start="2022-04-01" duration="13" complete="0" thirdDate="2022-04-01" thirdDate-constraint="0" expand="true">
+                    <depend id="7" type="2" difference="0" hardness="Strong"/>
+                    <task id="3" name="Relevar" color="#8cb6ce" meeting="false" start="2022-04-01" duration="7" complete="0" thirdDate="2022-04-01" thirdDate-constraint="0" expand="true">
+                        <depend id="4" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="4" name="Compra" color="#8cb6ce" meeting="false" start="2022-04-08" duration="4" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                        <depend id="5" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="5" name="Prueba" color="#8cb6ce" meeting="false" start="2022-04-12" duration="2" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                        <depend id="6" type="3" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="6" name="Calibración" color="#8cb6ce" meeting="false" start="2022-04-12" duration="2" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="7" name="Acondicionamiento de señal (Arduino)" color="#8cb6ce" meeting="false" start="2022-04-14" duration="3" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                    <depend id="8" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="8" name="Diseño" color="#8cb6ce" meeting="false" start="2022-04-18" duration="1" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                    <depend id="9" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="9" name="Compra de componentes" color="#8cb6ce" meeting="false" start="2022-04-19" duration="1" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                    <depend id="10" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="10" name="Programación (Arduino)" color="#8cb6ce" meeting="false" start="2022-04-20" duration="3" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                    <depend id="11" type="3" difference="0" hardness="Strong"/>
+                </task>
+                <task id="11" name="Montaje Prototipo I" color="#8cb6ce" meeting="false" start="2022-04-20" duration="3" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                    <depend id="12" type="3" difference="0" hardness="Strong"/>
+                </task>
+                <task id="12" name="Evaluación Prototipo I" color="#8cb6ce" meeting="false" start="2022-04-22" duration="1" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="13" name="Etapa II" color="#8cb6ce" meeting="false" start="2022-04-23" duration="14" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+                <task id="14" name="Identificar fallas del Prototipo I" meeting="false" start="2022-04-23" duration="1" complete="0" expand="true">
+                    <depend id="15" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="15" name="Relevar uC" color="#8cb6ce" meeting="false" start="2022-04-24" duration="1" complete="0" thirdDate="2022-04-23" thirdDate-constraint="0" expand="true">
+                    <depend id="16" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="16" name="Diseño según uC" color="#8cb6ce" meeting="false" start="2022-04-26" duration="3" complete="0" thirdDate="2022-04-23" thirdDate-constraint="0" expand="true">
+                    <depend id="17" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="17" name="Compra de componentes y uC" color="#8cb6ce" meeting="false" start="2022-04-29" duration="1" complete="0" thirdDate="2022-04-23" thirdDate-constraint="0" expand="true">
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="18" name="Diseño PCB Prototipo II" color="#8cb6ce" meeting="false" start="2022-04-30" duration="4" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="3" difference="0" hardness="Strong"/>
+                </task>
+                <task id="19" name="Confeccionar Prototipo II" color="#8cb6ce" meeting="false" start="2022-05-03" duration="1" complete="0" thirdDate="2022-04-23" thirdDate-constraint="0" expand="true">
+                    <depend id="20" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="20" name="Soldar" color="#8cb6ce" meeting="false" start="2022-05-04" duration="1" complete="0" thirdDate="2022-04-23" thirdDate-constraint="0" expand="true">
+                    <depend id="21" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="21" name="Pruebas y presentacion del Prototipo II" color="#8cb6ce" meeting="false" start="2022-05-05" duration="3" complete="0" thirdDate="2022-04-23" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="22" name="Etapa III" color="#000000" meeting="false" start="2022-05-08" duration="21" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                <task id="23" name="Mejoras esteticas" color="#8cb6ce" meeting="false" start="2022-05-08" duration="4" complete="0" thirdDate="2022-05-07" thirdDate-constraint="0" expand="true">
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="24" name="Rediseñar PCB" color="#8cb6ce" meeting="false" start="2022-05-12" duration="5" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" name="Confeccionar placa" color="#8cb6ce" meeting="false" start="2022-05-17" duration="7" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                    <depend id="26" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="26" name="Soldar" color="#8cb6ce" meeting="false" start="2022-05-25" duration="1" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                    <depend id="27" type="3" difference="0" hardness="Strong"/>
+                </task>
+                <task id="27" name="Evaluación final" color="#8cb6ce" meeting="false" start="2022-05-25" duration="1" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                    <depend id="28" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="28" name="Manual e Informe" color="#8cb6ce" meeting="false" start="2022-05-26" duration="3" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="29" name="Entrega" color="#8cb6ce" meeting="false" start="2022-05-29" duration="1" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
